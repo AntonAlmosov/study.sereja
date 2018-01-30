@@ -1,0 +1,19 @@
+@import url("desktop-xl.css");
+@import url("desktop.css");
+@import url("tablet.css");
+@import url("mobile.css");
+@import url("reset.css");
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  border: 1px solid black;
+}
+.card p{
+  padding: 30px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}

@@ -1,0 +1,23 @@
+@media (min-width:1440px){
+  .cards{
+    width: 80%;
+  }
+  .cards{
+    display: flex;
+    justify-content: space-around;
+  }
+  .card{
+    width: 300px;
+  }
+  .card p{
+    font-size: 18pt;
+  }
+  .cardImage{
+    width: 300px;
+    height: 30%;
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

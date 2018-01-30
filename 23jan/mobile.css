@@ -13,6 +13,7 @@
     background-color: green;
   }
   .screen .mobile{
-    display: block;
+    display: flex;
+    
   }
 }
