@@ -13,11 +13,11 @@
   }
   .card p{
     font-size: 12pt;
+    line-height: 16pt;
   }
   .cardImage{
     width: 100%;
-    height: 30%;
-    background-image: url(image.jpg);
+    height: 13%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

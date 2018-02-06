@@ -8,12 +8,33 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #f8f8f8;
+  min-width: 320px;
+}
+.cards{
+  max-width: 1280px;
 }
 .card{
-  border: 1px solid black;
+  margin-bottom: 70px;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: content-box;
 }
 .card p{
-  padding: 30px;
-  margin-top: 30px;
+  padding: 10px 10px 20px 30px;
+  margin-top: 10px;
   font-family: sans-serif;
+}
+.cardImage {
+  border-top: 0px;
+  border-radius: 10px;
+}
+#card1{
+  background-image: url(image.jpg);
+}
+#card2{
+  background-image: url(image2.jpg);
+}
+#card3{
+  background-image: url(image3.jpg);
 }
