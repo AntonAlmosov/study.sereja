@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption:400,700');
+
+@import "reset.css";
+@import "desktopXL";
+@import "desktop";
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 { background-image: url(../img/landing-mockup-1@2x.jpg); background-size: cover;}
+  #mockup2 { background-image: url(../img/landing-mockup-2@2x.jpg); }
+  #mockup3 { background-image: url(../img/landing-mockup-3@2x.jpg); background-size: cover;}
+}
+
+body{
+  background-color: #FAFAFA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

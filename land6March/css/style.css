@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption:400,700");
+@import url(reset.css);
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: white; }
+  .row {
+    width: 100%;
+    max-width: 1440px;
+    height: 800px;
+    position: relative; }
+  h1 {
+    font-family: "PT Sans Caption";
+    font-size: 36px;
+    line-height: 1.3; }
+  p {
+    font-family: "PT Sans";
+    font-size: 26px;
+    line-height: 1.3;
+    margin-top: 20px; }
+  .menubar {
+    position: fixed;
+    top: 0px;
+    max-width: 1440px;
+    width: 100%;
+    z-index: 20; }
+    .menubar div {
+      background-color: white;
+      height: 50px;
+      padding: 0 20px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: "PT Sans";
+      -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05); }
+      .menubar div .logo img {
+        height: 15px; }
+      .menubar div a {
+        color: rgba(0, 0, 0, 0.2);
+        text-decoration: none; }
+        .menubar div a:hover {
+          color: rgba(0, 0, 0, 0.4); }
+  .left {
+    left: 160px;
+    top: 140px; }
+    .left figure {
+      -webkit-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+      transform: translateX(-30%); }
+  .right {
+    right: 160px;
+    top: 140px; }
+    .right figure {
+      position: absolute;
+      right: 0px;
+      -webkit-transform: translateX(30%);
+      -ms-transform: translateX(30%);
+      transform: translateX(30%); }
+  .landText {
+    position: absolute;
+    width: 580px; }
+    .landText figure {
+      width: 210px;
+      height: 20px;
+      background-image: url(../img/pattern.svg);
+      margin-top: 100px; }
+  .mockup {
+    position: absolute;
+    height: 660px;
+    width: 45%;
+    top: 115px;
+    background-repeat: no-repeat; }
+  #mockup1 {
+    right: 0px;
+    background-image: url(../img/landing-mockup-1.jpg); }
+  #mockup2 {
+    left: 50px;
+    background-image: url(../img/landing-mockup-2.jpg);
+    background-size: contain; }
+  #mockup3 {
+    right: 0px;
+    background-image: url(../img/landing-mockup-3.jpg);
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 97px;
+    height: 779px; }
+  .footer {
+    background-color: #FCFCFC;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .footer .footerText {
+      text-align: center; }
+      .footer .footerText .footerButtonsBlock {
+        margin: 0 auto;
+        margin-top: 70px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 530px; }
+    .footer .footerShare {
+      position: absolute;
+      width: 100%;
+      bottom: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .footer .footerShare h2 {
+        font-size: 16px;
+        font-family: "PT Sans";
+        text-align: center;
+        margin-bottom: 10px; }
+  .buttonGreen {
+    width: 250px;
+    height: 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #64F364), color-stop(7%, #2BD42B), color-stop(95%, #01A401), to(#006900));
+    background-image: -webkit-linear-gradient(top, #64F364 2%, #2BD42B 7%, #01A401 95%, #006900 100%);
+    background-image: -o-linear-gradient(top, #64F364 2%, #2BD42B 7%, #01A401 95%, #006900 100%);
+    background-image: linear-gradient(to bottom, #64F364 2%, #2BD42B 7%, #01A401 95%, #006900 100%);
+    border-color: #00C000;
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    font-family: "PT Sans Caption";
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 15px;
+    font-size: 17px;
+    font-weight: 700; }
+  .buttonGrey {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "PT Sans";
+    line-height: 40px;
+    font-size: 15px;
+    text-decoration: none; } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 {
+    background-image: url(../img/landing-mockup-1@2x.jpg);
+    background-size: cover; }
+  #mockup2 {
+    background-image: url(../img/landing-mockup-2@2x.jpg); }
+  #mockup3 {
+    background-image: url(../img/landing-mockup-3@2x.jpg);
+    background-size: cover; } }
+
+body {
+  background-color: #FAFAFA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
