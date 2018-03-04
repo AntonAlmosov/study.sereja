@@ -1,0 +1,232 @@
+@import url("reset.css");
+
+ body{
+   background-color: #F3F3F3;
+ }
+ .menu{
+   width: 100%;
+   height: 60px;
+   color: black;
+   background-color: black;
+   position: fixed;
+ }
+ .wrapper{
+   width: 1024px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .logo{
+   font-family: 'Gilroy';
+   font-size: 24pt;
+   text-decoration: none;
+   color: white;
+ }
+ .logo a{
+   text-decoration: none;
+   color: white;
+ }
+ .logo a:hover{
+   text-decoration: underline;
+ }
+ .logo a:visited{
+   color: white;
+ }
+.menu-buttons{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+.menu-buttons a{
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 14pt;
+  color: white;
+  padding: 20px;
+}
+.menu-buttons a:hover{
+  text-decoration: underline;
+}
+.menu-buttons a:visited{
+  color: white;
+}
+.menu-buttons a:active{
+  background-color: white;
+  color: black;
+}
+.container{
+  width: 1024px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding-bottom: 100px;
+}
+.about{
+  padding: 130px 0px 70px 0px;
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1CBAB3;
+}
+.about-text{
+  width: 650px;
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+.about-text p{
+  padding-left: 70px;
+  font-size: 14pt;
+  font-family: 'Raleway';
+  margin-bottom: 30px;
+  line-height: 18pt;
+  color: white;
+  text-align: right;
+}
+.about-text h2{
+  text-align: right;
+  color: white;
+  font-size: 16pt;
+  font-weight: 700;
+  font-family: 'Raleway';
+}
+.line-white{
+  width: 470px;
+  height: 30px;
+  border-top: 5px solid white;
+}
+.line-grey{
+  width: 470px;
+  height: 30px;
+  border-top: 5px solid black;
+  margin: 0 auto;
+}
+.about-photo{
+  width: 250px;
+  height: 250px;
+  background-image: url(../img/photo.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 50%;
+  margin-right: 40px;
+}
+.portfolio{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.portfolio h1{
+  margin: auto;
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 40pt;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.portfolio-cards{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio-card{
+  width: 420px;
+  height: 300px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+#port1{
+  background-image: url(http://qlip.in/images/YMCA-Realtor-Donation-3.jpg);
+}
+#port2{
+  background-image: url(http://qlip.in/images/webcaballero.jpg);
+}
+#port3{
+  background-image: url(http://qlip.in/images/webmarqas.jpg);
+}
+#port4{
+  background-image: url(http://qlip.in/images/webbrandaxis.jpg);
+}
+.contact{
+  display: flex;
+  flex-flow: column;
+}
+.contact h1{
+  margin: 0 auto;
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 40pt;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+.contact-block{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form{
+  width: 470px;
+}
+.form-text{
+  width: 470px;
+}
+.form-text p{
+  font-family: 'Raleway';
+  font-size: 14pt;
+  line-height: 16pt;
+  padding-right: 70px;
+  margin-bottom: 30px;
+}
+.contact-form{
+  margin-left: 50px;
+}
+.form-input{
+  width: 400px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  padding-bottom: 10px;
+}
+.form-input input{
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  font-size: 24pt;
+  color: grey;
+  border: 0px;
+}
+.form-input textarea{
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  font-size: 24pt;
+  color: grey;
+  border: 0px;
+}
+.contact-block button{
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0);
+  font-size: 24pt;
+  padding: 20px 40px;
+}
+.footer{
+  width: 100%;
+  height: 60px;
+  color: black;
+  background-color: black;
+}
+.wrapper2{
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrapper2 img{
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+}
