@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption:400,700");
-@import url(reset.css);
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 {
+    background-image: url(../img/landing-mockup-1@2x.jpg);
+    background-size: cover; }
+  #mockup2 {
+    background-image: url(../img/landing-mockup-2@2x.jpg); }
+  #mockup3 {
+    background-image: url(../img/landing-mockup-3@2x.jpg);
+    background-size: cover; } }
+
+body {
+  margin: 0px;
+  margin-bottom: -10px;
+  background-color: #FAFAFA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
@@ -22,13 +38,13 @@
     font-size: 26px;
     line-height: 1.3;
     margin-top: 20px; }
-  .menubar {
+  .menu {
     position: fixed;
     top: 0px;
     max-width: 1440px;
     width: 100%;
     z-index: 20; }
-    .menubar div {
+    .menu div {
       background-color: white;
       height: 50px;
       padding: 0 20px;
@@ -46,29 +62,30 @@
       font-family: "PT Sans";
       -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05); }
-      .menubar div .logo img {
+      .menu div .logo img {
         height: 15px; }
-      .menubar div a {
+      .menu div a {
         color: rgba(0, 0, 0, 0.2);
         text-decoration: none; }
-        .menubar div a:hover {
+        .menu div a:hover {
           color: rgba(0, 0, 0, 0.4); }
   .left {
     left: 160px;
     top: 140px; }
     .left figure {
-      -webkit-transform: translateX(-30%);
-      -ms-transform: translateX(-30%);
-      transform: translateX(-30%); }
+      -webkit-transform: translate3d(-40%, 0, 0);
+      transform: translate3d(-40%, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; }
   .right {
     right: 160px;
     top: 140px; }
     .right figure {
       position: absolute;
       right: 0px;
-      -webkit-transform: translateX(30%);
-      -ms-transform: translateX(30%);
-      transform: translateX(30%); }
+      -webkit-transform: translateX(40%);
+      -ms-transform: translateX(40%);
+      transform: translateX(40%); }
   .landText {
     position: absolute;
     width: 580px; }
@@ -176,18 +193,3 @@
     line-height: 40px;
     font-size: 15px;
     text-decoration: none; } }
-
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-  #mockup1 {
-    background-image: url(../img/landing-mockup-1@2x.jpg);
-    background-size: cover; }
-  #mockup2 {
-    background-image: url(../img/landing-mockup-2@2x.jpg); }
-  #mockup3 {
-    background-image: url(../img/landing-mockup-3@2x.jpg);
-    background-size: cover; } }
-
-body {
-  background-color: #FAFAFA;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
