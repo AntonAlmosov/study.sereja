@@ -1,0 +1,8 @@
+@media (min-width: 1440px) {
+  header {
+    margin: 0 auto;
+    width: 1200px;
+    height: 340px; }
+    header .logo {
+      width: 149px;
+      height: 74px; } }

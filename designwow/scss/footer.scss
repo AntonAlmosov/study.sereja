@@ -1,0 +1,200 @@
+@media (min-width:1440px){
+
+  footer{
+    margin: 0 auto;
+    width: 1200px;
+    border-top: solid 1px #d2d2d2;
+
+    .footerBlock{
+      display: flex;
+      padding-bottom: 78px;
+      border-bottom: solid 1px #d2d2d2;
+
+      .footerHeading{
+        margin-top: 44px;
+        font-family: Futura;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 0.95;
+        letter-spacing: 2px;
+      }
+
+      .footerContacts{
+        margin-top: 41px;
+        margin-left: 370px;
+        width: 240px;
+        height: 210px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        p{
+          font-family: "FuturaDemiC";
+          font-size: 16px;
+          line-height: 1.88;
+          letter-spacing: 2px;
+        }
+
+      }
+
+    }
+    .footerCopyright{
+      margin-top: 17px;
+      padding-bottom: 102px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      font-family: HelveticaNeue;
+      font-size: 16px;
+      line-height: 3.13;
+      color: #c5c5c5;
+
+        #sulliwanCaption{
+          margin-left: 380px;
+        }
+
+        #orientirCaption{
+          margin-left: 70px;
+        }
+
+    }
+
+  }
+
+}
+
+
+@media (min-width:1024px) and (max-width: 1439px){
+
+  footer{
+    margin: 0 auto;
+    width: 960px;
+    border-top: solid 1px #d2d2d2;
+
+    .footerBlock{
+      display: flex;
+      padding-bottom: 70px;
+      border-bottom: solid 1px #d2d2d2;
+
+      .footerHeading{
+        margin-top: 38px;
+        font-family: Futura;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.27;
+        letter-spacing: 2px;
+      }
+
+      .footerContacts{
+        margin-top: 42px;
+        margin-left: 306px;
+        width: 240px;
+        height: 210px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        p{
+          font-family: "FuturaDemiC";
+          font-size: 16px;
+          line-height: 1.88;
+          letter-spacing: 2px;
+        }
+
+      }
+
+    }
+    .footerCopyright{
+      margin-top: 9px;
+      padding-bottom: 70px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      font-family: HelveticaNeue;
+      font-size: 14px;
+      line-height: 3.53;
+      color: #c5c5c5;
+
+        #sulliwanCaption{
+          margin-left: 359px;
+        }
+
+        #orientirCaption{
+          margin-left: 50px;
+        }
+
+    }
+
+  }
+
+}
+
+
+@media (min-width: 376px) and (max-width: 1023px){
+}
+
+
+@media (max-width: 412px){
+  footer{
+    margin: 0 20px;
+    max-width: 360px;
+    border-top: solid 1px #d2d2d2;
+
+    .footerBlock{
+      display: flex;
+      flex-flow: column;
+      padding-bottom: 68px;
+      border-bottom: solid 1px #d2d2d2;
+
+      .footerHeading{
+        margin-top: 31px;
+        font-family: Futura;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 1.52;
+        letter-spacing: 2px;
+      }
+
+      .footerContacts{
+        margin-top: 42px;
+        width: 223px;
+        height: 135px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        p{
+          font-family: "FuturaDemiC";
+          font-size: 16px;
+          line-height: 1.88;
+          letter-spacing: 2px;
+        }
+
+      }
+
+    }
+    .footerCopyright{
+      margin-top: 25px;
+      padding-bottom: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-family: HelveticaNeue;
+      font-size: 14px;
+      color: #c5c5c5;
+
+        #yearCaption{
+          width: 100vw;
+        }
+
+        #sulliwanCaption{
+          margin-top: 24px;
+        }
+
+        #orientirCaption{
+          margin-top: 24px;
+          margin-right: 37px
+        }
+
+    }
+
+  }
+
+}
