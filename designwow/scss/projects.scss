@@ -1,0 +1,239 @@
+@media (min-width:1440px){
+  .project{
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 1097px;
+    border-bottom: solid 1px #cdcdcd;
+    .projectArrows{
+      position: absolute;
+      right: 0;
+      top: 33px;
+      .projectArrowLeft{
+        display: inline-block;
+        width: 88px;
+        height: 15px;
+        margin-right: 33px;
+        background-image: url(../img/arrowLeft.svg);
+      }
+      .projectArrowRight{
+        display: inline-block;
+        width: 88px;
+        height: 15px;
+        background-image: url(../img/arrowRight.svg);
+      }
+    }
+    .projectDescription{
+      top: 204px;
+      position: absolute;
+      z-index: 2;
+      h1{
+        font-family: "ThemaCy-Lt";
+        font-size: 90px;
+      }
+      h2{
+        font-family: "FuturaDemiC";
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #b4b4b4;
+        text-transform: uppercase;
+      }
+      p{
+        margin-top: 101px;
+        width: 480px;
+        font-family: "HelveticaNeue";
+        font-size: 18px;
+        line-height: 1.67;
+        color: #1d1d1d;
+      }
+      .projectButton{
+        margin-top: 52px;
+        width: 240px;
+        height: 70px;
+        border: solid 1px #979797;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "FuturaDemiC";
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    .projectPreview{
+      position: absolute;
+      width: 601px;
+      height: 881px;
+      object-fit: contain;
+      right: 0px;
+      top: 100px;
+    }
+    .projectPreviewMob{
+      display: none;
+    }
+    &:last-of-type{
+      border: 0px;
+      height: 1200px;
+      .projectDescription{
+        top: 302px;
+      }
+    }
+  }
+
+}
+
+
+@media (min-width:1024px) and (max-width: 1439px){
+  .project{
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    height: 700px;
+    border-bottom: solid 1px #cdcdcd;
+    .projectArrows{
+      position: absolute;
+      right: 0;
+      top: 33px;
+      .projectArrowLeft{
+        display: inline-block;
+        width: 88px;
+        height: 15px;
+        margin-right: 33px;
+        background-image: url(../img/arrowLeft.svg);
+      }
+      .projectArrowRight{
+        display: inline-block;
+        width: 88px;
+        height: 15px;
+        background-image: url(../img/arrowRight.svg);
+      }
+    }
+    .projectDescription{
+      top: 41px;
+      position: absolute;
+      z-index: 2;
+      h1{
+        font-family: "ThemaCy-Lt";
+        font-size: 90px;
+      }
+      h2{
+        font-family: "FuturaDemiC";
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #b4b4b4;
+        text-transform: uppercase;
+      }
+      p{
+        margin-top: 101px;
+        width: 480px;
+        font-family: "HelveticaNeue";
+        font-size: 18px;
+        line-height: 1.67;
+        color: #1d1d1d;
+      }
+      .projectButton{
+        margin-top: 52px;
+        width: 240px;
+        height: 70px;
+        border: solid 1px #979797;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "FuturaDemiC";
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    .projectPreview{
+      position: absolute;
+      object-fit: contain;
+      right: 0px;
+      top: 70px;
+      img{
+        width: 360px;
+        height: 528.5px;
+      }
+    }
+    .projectPreviewMob{
+      display: none;
+    }
+    &:last-of-type{
+      border: 0px;
+      height: 750px;
+      .projectDescription{
+        top: 49px;
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: 376px) and (max-width: 1023px){
+}
+
+
+@media (max-width: 412px){
+
+  .project{
+    margin: 0 auto;
+    position: relative;
+    width: 360px;
+    .projectArrows{
+      display: none;
+    }
+    .projectDescription{
+      margin-top: 15px;
+      margin-bottom: 61px;
+      h1{
+        font-family: "ThemaCy-Lt";
+        font-size: 50px;
+      }
+      h2{
+        margin-top: 7px;
+        font-family: "FuturaDemiC";
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: #b4b4b4;
+        text-transform: uppercase;
+      }
+      p{
+        margin-top: 26px;
+        width: 321px;
+        font-family: "HelveticaNeue";
+        font-size: 16px;
+        line-height: 1.88;
+        color: #1d1d1d;
+      }
+      .projectButton{
+        margin: 41px auto 0 auto;
+        width: 320px;
+        height: 70px;
+        border: solid 1px #979797;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "FuturaDemiC";
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    .projectPreview{
+      display: none;
+    }
+    .projectPreviewMob{
+      img{
+        width: 100vw;
+      }
+    }
+    &:last-of-type{
+        margin-bottom: 100px;
+    }
+  }
+
+}

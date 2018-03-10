@@ -1,4 +1,11 @@
+#underline{
+  border-bottom: solid 1px #979797;
+}
+
 @media (min-width:1440px){
+  .headerMobile{
+    display: none;
+  }
   header{
     margin: 0 auto;
     width: 1200px;
@@ -16,6 +23,7 @@
 
     .headerLinks{
       width: 307px;
+      height: 28px;
       margin-top: 69px;
       margin-left: 450.5px;
       display: flex;
@@ -60,6 +68,9 @@
 
 
 @media (min-width:1024px) and (max-width: 1439px){
+  .headerMobile{
+    display: none;
+  }
   header{
     margin: 0 auto;
     width: 960px;
@@ -77,6 +88,7 @@
 
     .headerLinks{
       width: 311px;
+      height: 28px;
       margin-top: 39px;
       margin-left: 331px;
       display: flex;
@@ -117,7 +129,10 @@
     border-bottom: solid 1px #c8c8c8;
   }
 }
-@media (min-width: 376px) and (max-width: 1023px){
+@media (min-width: 413px) and (max-width: 1023px){
+  .headerMobile{
+    display: none;
+  }
   header{
     margin: 0 auto;
     max-width: 95vw;
@@ -135,6 +150,7 @@
 
     .headerLinks{
       width: 250px;
+      height: 23px;
       margin-top: 39px;
       display: flex;
       justify-content: space-between;
@@ -175,29 +191,76 @@
 }
 @media (max-width: 412px){
   header{
-    margin: 0 20px;
-    max-width: 360px;
-    height: 110px;
+    margin: 0 auto;
+    width: 340px;
     display: flex;
-    justify-content: space-between;
-    .logo{
-      margin-top: 20px;
-      margin-left: 20px;
-      width: 65px;
-      height: 32px;
-      background-image: url(../img/logo.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    flex-flow: column;
+    align-items: center;
+    font-family: "FuturaDemiC";
+    .headerMobile{
+      width: 100%;
+      .headerMobileTop{
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px #c8c8c8;
 
-    .headerBurger{
-      margin-top: 20px;
-      margin-right: 20px;
-      width: 33px;
-      height: 22px;
-      background-image: url(../img/burger.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
+        .mobileLogo{
+          margin-top: 20px;
+          width: 65px;
+          height: 32px;
+          background-image: url(../img/logo.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        .headerMobileBurger{
+          margin-top: 20px;
+          width: 33px;
+          height: 22px;
+          background-image: url(../img/burger.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        .headerMobileClose{
+          display: none;
+          margin-top: 20px;
+          width: 25px;
+          height: 26px;
+          background-image: url(../img/close.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .headerMobileLinks{
+        display: none;
+        margin-top: 60px;
+        padding-bottom: 67px;
+        height: 280px;
+        display: none;
+        a{
+          display: block;
+          text-align: center;
+          font-size: 16px;
+          line-height: 4.38;
+          letter-spacing: 3px;
+          text-decoration: none;
+          color: black;
+        }
+        border-bottom: solid 1px #c8c8c8;
+      }
+      .headerMobileSocial{
+        margin-top: 25px;
+        display: none;
+        text-align: center;
+        a{
+          text-decoration: none;
+          color: black;
+          padding: 0px 13px 0px 13px;
+        }
+      }
     }
 
     .headerLinks{
@@ -208,6 +271,8 @@
       display: none;
     }
 
-    border-bottom: solid 1px #c8c8c8;
+    .logo{
+      display: none;
+    }
   }
 }
