@@ -69,14 +69,27 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-bottom: solid 1px #c8c8c8; }
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: white; }
     header .logo {
       margin-top: 67px;
       width: 149px;
       height: 74px;
       background-image: url(../img/logo.svg);
       background-size: contain;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
     header .headerLinks {
       width: 307px;
       height: 28px;
@@ -87,7 +100,10 @@ table {
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
       header .headerLinks a {
         font-family: "FuturaDemiC", sans-serif;
         font-size: 16px;
@@ -109,17 +125,41 @@ table {
       justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
       header .headerLanguage p {
         -webkit-transform: translate3d(1px, 2px, 0);
         transform: translate3d(1px, 2px, 0);
-        font-family: FuturaDemiC;
+        font-family: "FuturaDemiC";
         font-size: 14px;
         letter-spacing: 1.8px; }
         header .headerLanguage p::-moz-selection {
           background: transparent; }
         header .headerLanguage p::selection {
-          background: transparent; } }
+          background: transparent; }
+    header .headerLine {
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c8c8;
+      top: 340px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+  .headerShrinked {
+    height: 120px; }
+    .headerShrinked .logo {
+      margin-top: 20px; }
+    .headerShrinked .headerLinks {
+      margin-top: 50px; }
+    .headerShrinked .headerLanguage {
+      margin-top: 37px; }
+    .headerShrinked .headerLine {
+      width: 4000px;
+      top: 120px;
+      left: -1000px; } }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .headerMobile {
@@ -596,6 +636,8 @@ table {
       text-transform: uppercase; } }
 
 @media (min-width: 1440px) {
+  .project:first-of-type {
+    margin-top: 340px; }
   .project {
     margin: 0 auto;
     position: relative;

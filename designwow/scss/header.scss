@@ -11,7 +11,13 @@
     width: 1200px;
     height: 340px;
     display: flex;
-
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    background-color: white;
     .logo{
       margin-top: 67px;
       width: 149px;
@@ -19,6 +25,7 @@
       background-image: url(../img/logo.svg);
       background-size: contain;
       background-repeat: no-repeat;
+      transition: all 0.2s ease-in-out;
     }
 
     .headerLinks{
@@ -28,6 +35,7 @@
       margin-left: 450.5px;
       display: flex;
       justify-content: space-between;
+      transition: all 0.2s ease-in-out;
 
       a{
         font-family: "FuturaDemiC", sans-serif;
@@ -48,10 +56,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.2s ease-in-out;
 
       p{
         transform: translate3d(1px, 2px, 0);
-        font-family: FuturaDemiC;
+        font-family: "FuturaDemiC";
         font-size: 14px;
         letter-spacing: 1.8px;
 
@@ -60,8 +69,33 @@
         }
       }
     }
+    .headerLine{
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c8c8;
+      top: 340px;
+      transition: all 0.5s ease-in-out;
+    }
 
-    border-bottom: solid 1px #c8c8c8;
+    // border-bottom: solid 1px #c8c8c8;
+  }
+  .headerShrinked{
+    height: 120px;
+    .logo{
+      margin-top: 20px;
+    }
+    .headerLinks{
+      margin-top: 50px;
+    }
+    .headerLanguage{
+      margin-top: 37px;
+    }
+    .headerLine{
+      width: 4000px;
+      top: 120px;
+      left: -1000px;
+    }
   }
 }
 

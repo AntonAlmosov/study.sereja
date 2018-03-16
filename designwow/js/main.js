@@ -17,4 +17,12 @@ $(document).ready(function(){
     $("footer").show();
   });
 
+  $(document).on("scroll", function(){
+		if ($(document).scrollTop() > 160) {
+		  $("header").addClass("headerShrinked");
+		}
+		else {
+			$("header").removeClass("headerShrinked");
+		}
+	});
 });
