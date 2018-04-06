@@ -8,6 +8,10 @@
    -moz-osx-font-smoothing: grayscale;
  }
 
+ body{
+   overflow-x: hidden;
+ }
+
 @import "reset.scss";
 @import "header.scss";
 @import "footer.scss";

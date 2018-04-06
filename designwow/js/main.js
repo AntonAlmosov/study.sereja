@@ -18,7 +18,7 @@ $(document).ready(function(){
   });
 
   $(document).on("scroll", function(){
-		if ($(document).scrollTop() > 160) {
+		if ($(document).scrollTop() > 40) {
 		  $("header").addClass("headerShrinked");
 		}
 		else {

@@ -1,8 +1,11 @@
 @media (min-width:1440px){
+  .home:first-of-type{
+    padding-top: 340px;
+  }
   .home{
     margin: 0 auto;
     width: 1200px;
-
+    box-sizing: border-box;
     p{
       margin-top: 111px;
       width: 100%;
@@ -67,11 +70,7 @@
 }
 
 
-@media (min-width: 413px) and (max-width: 1023px){
-}
-
-
-@media (max-width: 412px){
+@media (max-width: 420px){
 
   .home{
     margin: 0 20px;

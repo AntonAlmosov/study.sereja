@@ -88,6 +88,9 @@
 
 
 @media (min-width:1024px) and (max-width: 1439px){
+  .project:first-of-type{
+    margin-top: 260px;
+  }
   .project{
     margin: 0 auto;
     position: relative;
@@ -174,13 +177,10 @@
 
 }
 
-
-@media (min-width: 376px) and (max-width: 1023px){
-}
-
-
-@media (max-width: 412px){
-
+@media (max-width: 420px){
+  .project:first-of-type{
+    margin-top: 110px;
+  }
   .project{
     margin: 0 auto;
     position: relative;
@@ -231,7 +231,7 @@
     }
     .projectPreviewMob{
       img{
-        width: 100vw;
+        width: 360px;
       }
     }
     &:last-of-type{

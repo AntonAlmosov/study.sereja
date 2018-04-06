@@ -110,7 +110,14 @@
     width: 960px;
     height: 260px;
     display: flex;
-
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    background-color: white;
     .logo{
       margin-top: 38px;
       width: 149px;
@@ -118,6 +125,7 @@
       background-image: url(../img/logo.svg);
       background-size: contain;
       background-repeat: no-repeat;
+      transition: all 0.5s ease-in-out;
     }
 
     .headerLinks{
@@ -127,7 +135,7 @@
       margin-left: 331px;
       display: flex;
       justify-content: space-between;
-
+      transition: all 0.5s ease-in-out;
       a{
         font-family: "FuturaDemiC", sans-serif;
         font-size: 16px;
@@ -147,10 +155,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      transition: all 0.5s ease-in-out;
       p{
         transform: translate3d(1px, 2px, 0);
-        font-family: FuturaDemiC;
+        font-family: "FuturaDemiC";
         font-size: 14px;
         letter-spacing: 1.8px;
 
@@ -159,86 +167,57 @@
         }
       }
     }
-
-    border-bottom: solid 1px #c8c8c8;
+    .headerLine{
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #c8c8c8;
+      top: 260px;
+      transition: all 0.5s ease-in-out;
+    }
   }
-}
-@media (min-width: 413px) and (max-width: 1023px){
-  .headerMobile{
-    display: none;
-  }
-  header{
-    margin: 0 auto;
-    max-width: 95vw;
-    height: 260px;
-    display: flex;
-    justify-content: space-between;
+  .headerShrinked{
+    height: 100px;
     .logo{
-      margin-top: 38px;
-      min-width: 100px;
-      max-height: 74px;
-      background-image: url(../img/logo.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
+      margin-top: 12px;
     }
-
     .headerLinks{
-      width: 250px;
-      height: 23px;
-      margin-top: 39px;
-      display: flex;
-      justify-content: space-between;
-
-      a{
-        font-family: "FuturaDemiC", sans-serif;
-        font-size: 14px;
-        letter-spacing: 4px;
-        color: #000000;
-        text-decoration: none;
-      }
+      margin-top: 40px;
     }
-
     .headerLanguage{
-      width: 5vw;
-      height: 5vw;
       margin-top: 25px;
-      border: solid 1px #c6c6c6;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      p{
-        transform: translate3d(1px, 2px, 0);
-        font-family: FuturaDemiC;
-        font-size: 14px;
-        letter-spacing: 1.8px;
-
-        &::selection{
-          background: rgba(0,0,0,0);
-        }
-      }
     }
-
-    border-bottom: solid 1px #c8c8c8;
+    .headerLine{
+      width: 4000px;
+      top: 100px;
+      left: -1000px;
+    }
   }
 }
-@media (max-width: 412px){
+@media (max-width: 420px){
   header{
     margin: 0 auto;
-    width: 340px;
+    width: 100vw;
     display: flex;
     flex-flow: column;
     align-items: center;
     font-family: "FuturaDemiC";
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    transition: all 0.5s ease-in-out;
     .headerMobile{
-      width: 100%;
+      width: 340px;
+      transition: all 0.5s ease-in-out;
       .headerMobileTop{
         height: 110px;
         display: flex;
         justify-content: space-between;
-        border-bottom: solid 1px #c8c8c8;
-
+        transition: all 0.5s ease-in-out;
         .mobileLogo{
           margin-top: 20px;
           width: 65px;
@@ -246,6 +225,7 @@
           background-image: url(../img/logo.svg);
           background-size: contain;
           background-repeat: no-repeat;
+          transition: all 0.5s ease-in-out;
         }
 
         .headerMobileBurger{
@@ -255,6 +235,7 @@
           background-image: url(../img/burger.svg);
           background-size: contain;
           background-repeat: no-repeat;
+          transition: all 0.5s ease-in-out;
         }
 
         .headerMobileClose{
@@ -265,6 +246,7 @@
           background-image: url(../img/close.svg);
           background-size: contain;
           background-repeat: no-repeat;
+          transition: all 0.5s ease-in-out;
         }
       }
 
@@ -284,6 +266,7 @@
           color: black;
         }
         border-bottom: solid 1px #c8c8c8;
+        transition: all 0.5s ease-in-out;
       }
       .headerMobileSocial{
         margin-top: 25px;
@@ -294,9 +277,9 @@
           color: black;
           padding: 0px 13px 0px 13px;
         }
+        transition: all 0.5s ease-in-out;
       }
     }
-
     .headerLinks{
       display: none;
     }
@@ -308,5 +291,9 @@
     .logo{
       display: none;
     }
+  }
+  .headerShrinked{
+    height: 70px;
+    transition: all 0.5s ease-in-out;
   }
 }
