@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(owl.carousel.min.css);
 @font-face {
   font-family: Pompadur;
   /* Имя шрифта */
@@ -670,13 +671,13 @@ table {
       position: absolute;
       right: 0;
       top: 33px; }
-      .project .projectArrows .projectArrowLeft {
+      .project .projectArrows .projectArrowPrev {
         display: inline-block;
         width: 88px;
         height: 15px;
         margin-right: 33px;
         background-image: url(../img/arrowLeft.svg); }
-      .project .projectArrows .projectArrowRight {
+      .project .projectArrows .projectArrowNext {
         display: inline-block;
         width: 88px;
         height: 15px;
@@ -749,13 +750,13 @@ table {
       position: absolute;
       right: 0;
       top: 33px; }
-      .project .projectArrows .projectArrowLeft {
+      .project .projectArrows .projectArrowPrev {
         display: inline-block;
         width: 88px;
         height: 15px;
         margin-right: 33px;
         background-image: url(../img/arrowLeft.svg); }
-      .project .projectArrows .projectArrowRight {
+      .project .projectArrows .projectArrowNext {
         display: inline-block;
         width: 88px;
         height: 15px;
@@ -804,7 +805,9 @@ table {
       -o-object-fit: contain;
       object-fit: contain;
       right: 0px;
-      top: 70px; }
+      top: 70px;
+      width: 360px;
+      height: 528.5px; }
       .project .projectPreview img {
         width: 360px;
         height: 528.5px; }

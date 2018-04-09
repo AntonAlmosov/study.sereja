@@ -6,11 +6,37 @@
   <title>PROJECTS</title>
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 2,
+      loop: true,
+      nav: false,
+      dots: false,
+      autoWidth: true,
+    });
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+
+    $('.projectArrowNext').click(function() {
+      owl.trigger('next.owl.carousel');
+    });
+
+    $('.projectArrowPrev').click(function() {
+      owl.trigger('prev.owl.carousel');
+    });
+  });
+  </script>
+
+
   <script src="js/main.js"></script>
 </head>
 <body>
-
   <header>
     <a href="/"><div class="logo"></div></a>
     <div class="headerLinks">
@@ -42,8 +68,8 @@
   <section class="project">
 
     <div class="projectArrows">
-      <div class="projectArrowLeft"></div>
-      <div class="projectArrowRight"></div>
+      <div class="projectArrowPrev"></div>
+      <div class="projectArrowNext"></div>
     </div>
 
     <div class="projectPreviewMob">
@@ -59,15 +85,16 @@
       </div>
     </div>
 
-    <div class="projectPreview">
-      <img src="img/pic1.png" alt="">
+    <div class="projectPreview owl-carousel">
+      <div><img src="img/pic1.png" alt=""></div>
+      <div><img src="img/pic2.png" alt=""></div>
     </div>
   </section>
 
   <section class="project">
     <div class="projectArrows">
-      <div class="projectArrowLeft"></div>
-      <div class="projectArrowRight"></div>
+      <div class="projectArrowPrev"></div>
+      <div class="projectArrowNext"></div>
     </div>
 
     <div class="projectPreviewMob">
@@ -83,8 +110,9 @@
       </div>
     </div>
 
-    <div class="projectPreview">
-      <img src="img/pic2.png" alt="">
+    <div class="projectPreview owl-carousel">
+      <div><img src="img/pic2.png" alt=""></div>
+      <div><img src="img/pic1.png" alt=""></div>
     </div>
 
   </section>

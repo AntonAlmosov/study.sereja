@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $(".headerMobileBurger").click(function(){
     $(".headerMobileBurger").hide();
     $("section").hide();
@@ -17,6 +18,8 @@ $(document).ready(function(){
     $("footer").show();
   });
 
+
+  //Minifying header
   $(document).on("scroll", function(){
 		if ($(document).scrollTop() > 40) {
 		  $("header").addClass("headerShrinked");

@@ -12,14 +12,14 @@
       position: absolute;
       right: 0;
       top: 33px;
-      .projectArrowLeft{
+      .projectArrowPrev{
         display: inline-block;
         width: 88px;
         height: 15px;
         margin-right: 33px;
         background-image: url(../img/arrowLeft.svg);
       }
-      .projectArrowRight{
+      .projectArrowNext{
         display: inline-block;
         width: 88px;
         height: 15px;
@@ -101,14 +101,14 @@
       position: absolute;
       right: 0;
       top: 33px;
-      .projectArrowLeft{
+      .projectArrowPrev{
         display: inline-block;
         width: 88px;
         height: 15px;
         margin-right: 33px;
         background-image: url(../img/arrowLeft.svg);
       }
-      .projectArrowRight{
+      .projectArrowNext{
         display: inline-block;
         width: 88px;
         height: 15px;
@@ -158,6 +158,8 @@
       object-fit: contain;
       right: 0px;
       top: 70px;
+      width: 360px;
+      height: 528.5px;
       img{
         width: 360px;
         height: 528.5px;
