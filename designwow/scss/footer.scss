@@ -128,14 +128,10 @@
 }
 
 
-@media (min-width: 413px) and (max-width: 1023px){
-}
-
-
-@media (max-width: 412px){
+@media (max-width: 414px){
   footer{
     margin: 0 20px;
-    max-width: 360px;
+    width: 360px;
     border-top: solid 1px #d2d2d2;
 
     .footerBlock{
@@ -146,7 +142,7 @@
 
       .footerHeading{
         margin-top: 31px;
-        font-family: Futura;
+        font-family: "Futura";
         font-size: 25px;
         font-weight: 500;
         line-height: 1.52;
